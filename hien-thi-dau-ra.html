@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thực hành hiển thị đầu ra với javascript</title>
+</head>
+<body>
+    <button type="button" onclick="Click();">click</button>
+    <div id="show"></div>
+
+    <button type="button" onclick="clickMe();">click</button>
+    <br>
+    <button type="button" onclick="ClickYou();">click</button>
+</body>
+</html>
+<script>
+    function Click() {
+        alert('xin chào');
+    }
+    function clickMe() {
+        document.getElementById('show').innerHTML= 'xin chào'
+    }
+    function ClickYou() {
+        document.write('hello')
+        console.log('chào đức')
+    }
+</script>
